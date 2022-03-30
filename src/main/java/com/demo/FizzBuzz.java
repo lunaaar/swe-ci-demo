@@ -4,14 +4,33 @@ public class FizzBuzz
 {
     String processNumber(int num)
 	{	
-    	// Copy your code here
-		return "";
+    	String s=Integer.toString(num);
+        if (num %3 ==0 && num %5 ==0) {
+            s = "Fizzbuzz";
+        }
+        else if (num%3 ==0) {
+            s = "Fizz";
+        }
+        else if (num%5 ==0) {
+            s = "Buzz";
+        }
+        return s;
 	}
 	
 	String processNumbers (int[] numList)
 	{
-    	// Copy your code here
-		return "";
+		String s = "";
+        
+        for (int i= 0;i < nums.length; i++) {
+            if (i != nums.length -1) {
+                s += processNumber(nums[i]) + ", ";
+            }
+            else {
+                s += processNumber(nums[i]);
+            }
+            
+        }
+        return s;
 	}
 
 }
