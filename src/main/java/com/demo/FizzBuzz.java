@@ -6,13 +6,13 @@ public class FizzBuzz
 	{	
     	String s=Integer.toString(num);
         if (num %3 ==0 && num %5 ==0) {
-            s = "Fizzbuzz";
+            s = "FizzBuzz";
         }
         else if (num%3 ==0) {
             s = "Fizz";
         }
         else if (num%5 ==0) {
-            s = "buzz";
+            s = "Buzz";
         }
         return s;
 	}
