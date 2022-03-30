@@ -12,7 +12,7 @@ public class FizzBuzz
             s = "Fizz";
         }
         else if (num%5 ==0) {
-            s = "Buzz";
+            s = "buzz";
         }
         return s;
 	}
