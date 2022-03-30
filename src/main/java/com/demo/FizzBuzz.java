@@ -21,12 +21,12 @@ public class FizzBuzz
 	{
 		String s = "";
         
-        for (int i= 0;i < nums.length; i++) {
-            if (i != nums.length -1) {
-                s += processNumber(nums[i]) + ", ";
+        for (int i= 0;i < numList.length; i++) {
+            if (i != numList.length -1) {
+                s += processNumber(numList[i]) + ", ";
             }
             else {
-                s += processNumber(nums[i]);
+                s += processNumber(numList[i]);
             }
             
         }
